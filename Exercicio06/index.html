@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="exercicio 05 de html">
+	<meta name="keywords" content="html">
+	<title>WEB 1 | Exercício 06</title>
+</head>
+
+<body>
+	<table border="1" >
+		<caption>Teste com células mescladas</caption>
+
+		<thead>
+			<tr>
+				<th rowspan="2"></th>
+				<th colspan="2">Média</th>
+				<th rowspan="2">Olhos Vermelhos</th>
+			</tr>
+			<tr>
+				<th>altura</th>
+				<th>peso</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<th>Masculinos</th>
+				<td>1.9</td>
+				<td>0.003</td>
+				<td>40%</td>
+			</tr>
+			<tr>
+				<th>Femininos</th>
+				<td>1.7</td>
+				<td>0.002</td>
+				<td>43%</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<table border="1">
+		<caption>Exemplo tabela aninhada</caption>
+
+		<thead>
+			<tr>
+				<th rowspan="3" colspan="2">CI</th>
+				<th rowspan="3">Todos os Gêneros</th>
+				<th colspan="2">Por Gênero</th>
+			</tr>
+			<tr>
+				<td>
+					<table border="1">
+						<thead>
+							<tr>
+								<th>Masculinos</th>
+								<th>Femininos</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>9215604</td>
+								<td>4512358</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<th>Rural</th>
+				<td>6521458</td>
+				<td>4215389</td>
+				<td>4152348</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table border="1">
+		<caption>Tabela de cronograma</caption>
+
+		<thead>
+			<tr>
+				<th>Turma</th>
+				<th>Horário</th>
+				<th>Segunda</th>
+				<th>Terça</th>
+				<th>Quarta</th>
+				<th>Quinta</th>
+				<th>Sexta</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td rowspan="5">2p</td>
+				<th>19:00 - 19:50</th>
+				<td>E. D.</td>
+				<td>IAW</td>
+				<td>Mod. BD</td>
+				<td>E. S.</td>
+				<td>Empreendedorismo</td>
+			</tr>
+			<tr>
+				<th>19:50 - 20:40</th>
+				<td>E. D.</td>
+				<td>IAW</td>
+				<td>Mod. BD</td>
+				<td>E. S.</td>
+				<td>E. D.</td>
+			</tr>
+			<tr>
+				<th>20:40 - 20:50</th>
+				<td colspan="5">Intervalo</td>
+			</tr>
+			<tr>
+				<th>20:50 - 21:40</th>
+				<td>E. D.</td>
+				<td>IAW</td>
+				<td>E. S.</td>
+				<td>Mod. BD</td>
+				<td>E. D.</td>
+			</tr>
+			<tr>
+				<th>21:40 - 22:30</th>
+				<td>E. D.</td>
+				<td>IAW</td>
+				<td>E. S.</td>
+				<td>Mod. BD</td>
+				<td>E. D.</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<table border="1">
+		<caption>Tabela de Equipamentos</caption>
+		<thead>
+			<tr>
+				<th colspan="4">Equipamentos adquiridos</th>
+			</tr>
+			<tr>
+				<th rowspan="2">Item Num.</th>
+				<th rowspan="2">Item Figura</th>
+				<th>Descrição</th>
+				<th>Preço</th>
+			</tr>
+			<tr>
+				<th>Instalações, etc.</th>
+				<th>Custo</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td rowspan="2">1.</td>
+				<td rowspan="2"><img src="./assets/IBM.gif" alt="ícone de um computador"></td>
+				<td>Ibm Clone Computer.</td>
+				<td>400,00</td>
+			</tr>
+			<tr>
+				<td>Instalação, etc.</td>
+				<td>20,00</td>
+			</tr>
+			<tr>
+				<td rowspan="2">2.</td>
+				<td rowspan="2"><img src="./assets/Memoria.gif" alt="ícone de um computador"></td>
+				<td>1 GB RAM Module for Computer</td>
+				<td>50,00</td>
+			</tr>
+			<tr>
+				<td>Instalação, etc.</td>
+				<td>14,00</td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<th colspan="4">Equipamentos adquiridos</th>
+			</tr>
+		</tfoot>
+	</table>
+
+<table border="1">
+	<caption>Tabela de Cursos</caption>
+
+	<thead>
+		<tr>
+			<th colspan="2">Cursos presenciais</th>
+			<th>Cursos a distância</th>
+		</tr>
+
+		<tr>
+			<th>Graduação</th>
+			<th>Nível Médio</th>
+			<th>Graduação</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr>
+			<td>Análise e Desenvolvimento de Sistemas</td>
+			<td>Técnico em Eletrônica</td>
+			<td>Licenciatura em Letras</td>
+		</tr>
+		
+		<tr>
+			<td rowspan="2">Engenharia de Computação</td>
+			<td>Técnico em Desenvolvimento de Sistemas</td>
+			<td>Licenciatura em Matemática</td>
+		</tr>
+		
+		<tr>
+			<td>Técnico em Computação Gráfica</td>
+			<td>Licenciatura em Computação</td>
+		</tr>
+
+	</tbody>
+
+	<tfoot>
+
+	</tfoot>
+</table>
+
+<table border="1">
+	<caption>Tabela de imagem via Unsplash</caption>
+
+	<tbody>
+		<tr>
+			<td><img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem aleatória do Unsplash" width="250"></td>
+			<td>Uma imagem aleatória provia pelo site Unsplash</td>
+			<td><a href="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" target="_blank">Link da imagem original</a></td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+
+</html>

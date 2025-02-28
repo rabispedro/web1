@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="exercicio 08 de html">
+	<meta name="keywords" content="html">
+	<title>WEB 1 | Exercício 08</title>
+</head>
+<body>
+	<form action="" method="get">
+		<fieldset>
+			<legend>Dados Pessoais</legend>
+
+			<label for="name">Nome: </label>
+			<input name="name" id="name" type="text" required>
+
+			<br>
+
+			<label for="address">Endereço: </label>
+			<input name="address" id="address" type="text" maxlength="256" required>
+
+			<br>
+
+			<label for="city">Cidade: </label>
+			<input name="city" id="city" type="text" maxlength="256" required>
+
+			<br>
+
+			<label for="estado">Estado</label>
+			<select name="state" id="estado">
+				<optgroup label="Região Norte">
+					<option value="acre">Acre</option>
+					<option value="amapa">Amapá</option>
+					<option value="amazonas">Amazonas</option>
+					<option value="para">Pará</option>
+					<option value="rondonia">Rondônia</option>
+					<option value="roraima">Roraima</option>
+					<option value="tocantins">Tocantins</option>
+				</optgroup>
+		
+				<optgroup label="Região Nordeste">
+					<option value="alagoas">Alagoas</option>
+					<option value="bahia">Bahia</option>
+					<option value="ceara">Ceará</option>
+					<option value="maranhao">Maranhão</option>
+					<option value="paraiba">Paraíba</option>
+					<option value="pernambuco">Pernambuco</option>
+					<option value="piaui">Piauí</option>
+					<option value="rio_grande_do_norte">Rio Grande do Norte</option>
+					<option value="sergipe">Sergipe</option>
+				</optgroup>
+		
+				<optgroup label="Região Centro-Oeste">
+					<option value="distrito_federal">Distrito Federal</option>
+					<option value="goias">Goias</option>
+					<option value="mato_grosso">Mato Grosso</option>
+					<option value="mato_grosso_do_sul">Mato Grosso do Sul</option>
+				</optgroup>
+		
+				<optgroup label="Região Sudeste">
+					<option value="espirito_santo">Espirito Santo</option>
+					<option value="rio_de_janeiro">Rio de Janeiro</option>
+					<option value="minas_gerais">Minas Gerais</option>
+					<option value="sao_paulo">Sao Paulo</option>
+				</optgroup>
+		
+				<optgroup label="Região Sul">
+					<option value="parana">Paraná</option>
+					<option value="rio_grande_do_sul">Rio Grande do Sul</option>
+					<option value="santa_catarina">Santa Catarina</option>
+				</optgroup>
+			</select>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Dados Profissionais</legend>
+
+			<label >Natureza do Cargo</label>
+			
+			<br>
+
+			<input type="radio" name="job" id="gerencia" value="gerencia">
+			<label for="gerencia">Gerência</label>
+
+			<input type="radio" name="job" id="financeiro" value="financeiro">
+			<label for="financeiro">Financeiro</label>
+
+			<input type="radio" name="job" id="recepcao" value="recepcao">
+			<label for="recepcao">Recepção</label>
+
+			<input type="radio" name="job" id="administrativo" value="administrativo">
+			<label for="administrativo">Administrativo</label>
+
+			<input type="radio" name="job" id="juridico" value="juridico">
+			<label for="juridico">Jurídico</label>
+			
+			<br>
+
+			<label>Área de interesse</label>
+
+			<br>
+
+			<input type="checkbox" name="interest" id="computacao" value="computacao">
+			<label for="computacao">Computação</label>
+
+			<input type="checkbox" name="interest" id="biologia" value="biologia">
+			<label for="biologia">Biologia</label>
+
+			<input type="checkbox" name="interest" id="meio_ambiente" value="meio_ambiente">
+			<label for="meio_ambiente">Meio Ambiente</label>
+
+			<input type="checkbox" name="interest" id="engenharia" value="engenharia">
+			<label for="engenharia">Engenharia</label>
+
+			<input type="checkbox" name="interest" id="historia" value="historia">
+			<label for="historia">História</label>
+
+			<br>
+
+			<label for="curriculum">Mini-currículo:</label>
+
+			<br>
+
+			<textarea name="curriculum" id="curriculum"></textarea>
+
+		</fieldset>
+
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpar">
+	</form>
+	
+	<br>
+
+	<form action="" method="get">
+		<fieldset>
+			<legend>Dados Cadastrais</legend>
+
+			<label for="nome">Nome: </label>
+			<input name="name" id="nome" type="text" required>
+
+			<br>
+
+			<label for="cpf">CPF: </label>
+			<input name="cpf" id="cpf" type="text" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="111.111.111-11" maxlength="14" required>
+
+			<br>
+
+			<label for="nascimento">Data de nascimento: </label>
+			<input name="birthday" id="nascimento" type="date">
+
+			<br>
+
+			<label for="endereco">Endereço: </label>
+			<input name="address" id="endereco" type="text" maxlength="256">
+			
+			<br>
+
+			<label for="sexo">Sexo: </label>
+			<select name="gender" id="sexo">
+				<option value="feminino">Feminino</option>
+				<option value="masculino">Masculino</option>
+			</select>
+
+			<br>
+
+			<label for="telefone">Telefone: </label>
+			<input name="telephone" id="telefone" type="text" pattern="\([0-9]{2}\) [0-9]{1} [0-9]{4}-[0-9]{4}" placeholder="(11) 1 1111-1111" maxlength="16">
+
+			<br>
+
+			<label for="login">Login: </label>
+			<input name="login" id="login" type="text" maxlength="80">
+
+			<br>
+
+			<label for="senha">Senha: </label>
+			<input name="password" id="senha" type="password" minlength="10" maxlength="80">
+		</fieldset>
+
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpar">
+	</form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+article > h2 {
+	color: blue;
+}
+
+ul {
+	list-style: circle outside url("assets/images/casa.png");
+}
+
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+caption {
+	color: red;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+thead {
+	color: snow;
+	background-color: green;
+}
+
+tfoot {
+	text-align: end;
+	background-color: gray;
+}
+
+th, td {
+	width: 120px;
+	height: 40px;
+	border: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: peachpuff;
+}
+
+td:nth-of-type(3) {
+	text-align: end;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px 25px;
+	background-color: aqua;
+	color: blue;
+}
+
+a:hover, a:active {
+	cursor: pointer;
+	background-color: aquamarine;
+}
+
+#lorem {
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 1rem;
+
+	width: 300px;
+	padding: 10px;
+}

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="exercicio 12 de html e css">
 	<meta name="keywords" content="html,css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./styles/index.css">
 	<title>WEB 1 | Exercício 12</title>
 </head>
 
@@ -18,21 +18,21 @@
 		<table>
 			<tbody>
 				<tr>
-					<th>X</th>
-					<th>O</th>
-					<th>X</th>
+					<td winner>X</td>
+					<td>O</td>
+					<td>X</td>
 				</tr>
 
 				<tr>
-					<th></th>
-					<th>X</th>
-					<th>O</th>
+					<td></td>
+					<td winner>X</td>
+					<td>O</td>
 				</tr>
 
 				<tr>
-					<th>O</th>
-					<th></th>
-					<th>X</th>
+					<td>O</td>
+					<td></td>
+					<td winner>X</td>
 				</tr>
 			</tbody>
 		</table>
@@ -66,23 +66,19 @@
 			<fieldset>
 				<legend>Dados Pessoais</legend>
 
-				<label for="nome">Nome: </label>
-				<br>
+				<label top-label for="nome">Nome: </label>
 				<input name="name" id="nome" type="text">
 				<br>
 
-				<label for="nascimento">Data de Nascimento: </label>
-				<br>
+				<label top-label for="nascimento">Data de Nascimento: </label>
 				<input name="birthdate" id="nascimento" type="date">
 				<br>
 
-				<label for="filhos">Quantidade de filhos: </label>
-				<br>
+				<label top-label for="filhos">Quantidade de filhos: </label>
 				<input name="children" id="filhos" type="number" min="0">
 				<br>
 
-				<label for="sexo">Sexo: </label>
-				<br>
+				<label top-label for="sexo">Sexo: </label>
 				<select name="gender" id="sexo" title="TESTEEEE">
 					<option disabled selected>Escolha...</option>
 					<option value="male">Masculino</option>
@@ -90,35 +86,31 @@
 				</select>
 				<br>
 
-				<label for="telefone">Telefone: </label>
-				<br>
+				<label top-label for="telefone">Telefone: </label>
 				<input name="phone" id="telephone" type="text" placeholder="(34)1234-5678" pattern="([0-9]{2}[0-9]{4}-[0-9]{4})" minlength="13" maxlength="13">
 				<br>
 
-				<label for="senha">Senha: </label>
-				<br>
+				<label top-label for="senha">Senha: </label>
 				<input name="password" id="senha" type="password">
 				<br>
 
-				<label for="tipo-sanguineo">Tipo sanguíneo</label>
-				<br>
+				<label top-label for="tipo-sanguineo">Tipo sanguíneo</label>
 
 				<input type="radio" name="blood" id="sangue-a">
 				<label for="sangue-a">A</label>
-
+				
 				<input type="radio" name="blood" id="sangue-b">
 				<label for="sangue-b">B</label>
-
+				
 				<input type="radio" name="blood" id="sangue-ab">
 				<label for="sangue-ab">AB</label>
-
+				
 				<input type="radio" name="blood" id="sangue-o">
 				<label for="sangue-o">O</label>
 
 				<br>
 
-				<label for="area-de-interesse">Área de interesse</label>
-				<br>
+				<label top-label for="area-de-interesse">Área de interesse</label>
 
 				<input type="checkbox" name="interest" id="biologia">
 				<label for="biologia">Biologia</label>
@@ -131,8 +123,7 @@
 
 				<br>
 
-				<label for="observacoes">Observações:</label>
-				<br>
+				<label top-label for="observacoes">Observações:</label>
 				<textarea name="observation" id="observacoes"></textarea>
 				<br>
 
@@ -156,7 +147,7 @@
 	<article>
 		<h2>Layout</h2>
 
-		<p>Vai para a página do Layout: <a href="./layout.html">página layout</a></p>
+		<p>Vai para a página do Layout: <a href="./pages/layout.html">página layout</a></p>
 	</article>
 
 </body>

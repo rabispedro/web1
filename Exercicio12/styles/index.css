@@ -1,0 +1,153 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+	background-color: beige;
+	border: 1px solid black;
+}
+
+article {
+	margin: 1rem;
+}
+
+article > h2 {
+	margin: 1rem 0;
+	font-size: 1.4rem;
+}
+
+table, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+td {
+	width: 30px;
+	height: 40px;
+}
+
+td[winner] {
+	background-color: yellow;
+}
+
+div {
+	position: relative;
+
+	width: 20rem;
+	height: 20rem;
+
+	border: 2px solid green;
+}
+
+div div {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	width: 80%;
+	height: 80%;
+
+	border-color: red;
+}
+
+form {
+	width: 50%;
+}
+
+fieldset {
+	border-color: red;
+	padding: 1rem;
+}
+
+label[top-label] {
+	display: block;
+
+	margin: 0.2rem 0;
+
+	font-weight: bold;
+}
+
+label[top-label] ~ input + label {
+	margin-right: 10%;
+}
+
+input:hover {
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select {
+	width: 100%;
+	height: 2rem;
+	padding: 0.1rem 0.5rem;
+}
+
+input[type="radio"] {
+	accent-color: red;
+}
+
+label[for="tipo-sanguineo"] > label {
+	margin-left: 1rem;
+
+}
+
+input[type="checkbox"] {
+	accent-color: green;
+}
+
+option[disabled] {
+	color: grey;
+}
+
+/* Desabilitar atributo 'resize' para evitar quebrar o layout da página */
+textarea {
+	width: 100%;
+	height: 5rem;
+	resize: none;
+}
+
+input[type="submit"],
+input[type="reset"] {
+	width: 8.2rem;
+	height: 2.2rem;
+	margin-top: 0.5rem;
+	margin-right: 0.2rem;
+	font-weight: bold;
+
+	color: snow;
+	background-color: green;
+
+	border: none;
+	border-radius: 0.3rem;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	background-color: darkgreen;
+}
+
+a[id^="link-fake"] {
+	display: inline-block;
+	
+	padding: 0.8rem 0.5rem;
+	background-color: wheat;
+	border-radius: 0.5rem;
+
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+
+	transition: background-color 0.3s;
+}
+
+a[id^="link-fake"]:hover {
+	background-color: aqua;
+}

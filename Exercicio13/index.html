@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="exercicio 13 de html, css e javascript">
+	<meta name="keywords" content="html,css,js">
+	<link rel="stylesheet" href="./styles.css">
+	<title>WEB 1 | Exercício 13</title>
+</head>
+
+<body>
+	<script src="./scripts/funcoes.js"></script>
+
+	<article>
+		<span>
+			<label for="n1">N1: </label>
+			<input type="text" id="n1" value="2">
+
+			<label for="n2">N2: </label>
+			<input type="text" id="n2" value="10">
+
+			<label for="texto">Texto: </label>
+			<input type="text" id="texto" value="abc">
+		</span>
+
+
+		<p>
+			Use o método <strong>parseInt()</strong> para converter texto em número caso necessário
+		</p>
+
+		<span>
+			Cálculos:
+			<button onclick="soma()">Soma</button>
+			<button onclick="subtracao()">Subtração</button>
+			<button onclick="multiplicacao()">Multiplicação</button>
+			<button onclick="divisao()">Divisão</button>
+			<button onclick="somaIntervalo()">Soma os números do intervalo</button>
+			<button onclick="fatorial()"">Calcule o fatorial de N1</button>
+		</span>
+
+		<span>
+			Lista de Intervalo:
+			<button onclick=" intervalo()">Todos os números de N1 a N2</button>
+			<button onclick="intervaloPares()">Pares de N1 a N2</button>
+			<button onclick="intervaloMultiplosCinco()">Múltiplos de cinco de N1 a N2</button>
+		</span>
+
+		<span>
+			Texto:
+			<button onclick="alertaTexto()">Mostre o nome num alert se o mesmo tiver menos que 10 caracteres. Caso
+				contrário avise sobre o erro.</button>
+		</span>
+
+		<p>
+			A lista de intervalo deve aparecer abaixo e no console (use F12 para conferir). O resultado dos cálculos
+			deve aparecer num alert.
+		</p>
+
+		<p>
+			Lista de intervalo aqui...
+		</p>
+		<span id="lista"></span>
+
+	</article>
+</body>
+
+</html>

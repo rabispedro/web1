@@ -52,7 +52,6 @@ function somaIntervalo() {
 function fatorial() {
 	const n1 = document.getElementById("n1").value
 
-
 	if (parseInt(n1) < 0)
 		alert(0)
 	else {
@@ -86,11 +85,11 @@ function intervalo() {
 		resposta.push(i)
 
 	lista.innerHTML = ""
+	console.clear()
 	resposta.forEach(numero => {
 		console.log(numero)
 		lista.innerHTML += `${numero} <br/>`
 	})
-
 }
 
 function intervaloPares() {
@@ -113,17 +112,16 @@ function intervaloPares() {
 		resposta.push(i)
 
 	lista.innerHTML = ""
+	console.clear()
 	resposta.forEach(numero => {
 		console.log(numero)
 		lista.innerHTML += `${numero} <br/>`
 	})
-
-
 }
 
 function intervaloMultiplosCinco() {
 	let resposta = []
-	let lista = document.getElementById("lista")
+	const lista = document.getElementById("lista")
 
 	const n1 = document.getElementById("n1").value
 	const n2 = document.getElementById("n2").value
@@ -141,6 +139,7 @@ function intervaloMultiplosCinco() {
 		resposta.push(i)
 
 	lista.innerHTML = ""
+	console.clear()
 	resposta.forEach(numero => {
 		console.log(numero)
 		lista.innerHTML += `${numero} <br/>`

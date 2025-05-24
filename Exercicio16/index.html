@@ -37,6 +37,26 @@
 		<p id="texto-1" onclick="alteraCor(event.target.id, 'red')">eu sou um parágrafo</p>
 		<a id="link-1" onclick="alteraCor(event.target.id, 'blue')">eu sou um link</a>
 	</article>
+
+	<hr>
+
+	<article>
+		<div class="blocos"></div>
+		<div class="blocos"></div>
+	</article>
+
+	<hr>
+
+	<article id="exericio-6">
+		<button onclick="criaQuadrado()">Cria Quadrado</button>
+	</article>
+
+	<hr>
+
+	<article>
+		<textarea id="area-de-texto" onchange="contaCaracteres(this)" onfocus="focaBorda(this)" onblur="desfocaBorda(this)"></textarea>
+		<span id="span-texto"></span>
+	</article>
 </body>
 
 </html>

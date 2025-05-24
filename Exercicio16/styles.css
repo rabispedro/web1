@@ -22,3 +22,10 @@ p {
 hr {
 	margin: 1rem 0;
 }
+
+div.blocos {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border: 1px solid black;
+}

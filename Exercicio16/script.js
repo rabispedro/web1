@@ -26,3 +26,47 @@ function alteraCor(id, cor) {
 	const tag = document.getElementById(id)
 	tag.style.color = cor
 }
+
+const divsBlocos = document.getElementsByClassName("blocos")
+
+divsBlocos[0].addEventListener("mouseover", () => {
+	divsBlocos[0].style.backgroundColor = "red"
+})
+
+divsBlocos[0].addEventListener("mouseout", () => {
+	divsBlocos[0].style.backgroundColor = "transparent"
+})
+
+divsBlocos[1].addEventListener("click", () => {
+	if (divsBlocos[1].style.backgroundColor === "" || divsBlocos[1].style.backgroundColor === "gray") {
+		divsBlocos[1].style.backgroundColor = "blue"
+	} else if (divsBlocos[1].style.backgroundColor === "blue") {
+		divsBlocos[1].style.backgroundColor = "gray"
+	}
+})
+
+function criaQuadrado() {
+	const article = document.getElementById("exericio-6")
+
+	const quadrado = document.createElement("div")
+	quadrado.style.display = "inline-block"
+	quadrado.style.backgroundColor = "red"
+	quadrado.style.width = "50px"
+	quadrado.style.height = "50px"
+	quadrado.style.margin = "10px"
+
+	article.appendChild(quadrado)
+}
+
+function contaCaracteres(elemento) {
+	const span = elemento.nextElementSibling
+	span.innerHTML = `Quantidade de caracteres: ${elemento.value.length}`
+}
+
+function focaBorda(elemento) {
+	elemento.style.border = "1px solid red"
+}
+
+function desfocaBorda(elemento) {
+	elemento.style.border = "1px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133))"
+}

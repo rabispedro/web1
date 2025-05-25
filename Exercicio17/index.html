@@ -14,10 +14,92 @@
 	<script defer src="./script.js"></script>
 
 	<article>
-		<div></div>
-		<div></div>
+		<h1>Exercício 1</h1>
+
+		<h2>Manipulação de elementos JavaScript:</h2>
+
+		<p>Escrever um código de uma função que verifique se o campo nome de uma pessoa está vazio (campo
+			requerido/obrigatório) por meio de JavaScript. Apresente mensagens de alerta.</p>
+
+		<form action="#" method="post" onsubmit="return validaTexto()">
+			<input name="required-text" type="text" placeholder="Digite seu texto aqui" id="entrada-obrigatoria">
+			<input type="submit" value="Testar">
+		</form>
+
+		<p>Escrever um código de uma função que faça a validação de um campo CPF de uma pessoa em um formulário. O campo
+			deve ser obrigatório e numérico com 11 dígitos. Apresente mensagens de alerta.</p>
+
+		<form action="#" method="post" onsubmit="return validaCpf()">
+			<input name="required-cpf" type="text" placeholder="Digite seu cpf aqui" id="cpf-obrigatorio">
+			<input type="submit" value="Testar">
+		</form>
 	</article>
 
+	<article>
+		<h1>Exercício 2</h1>
+
+		<p>Crie um elemento do tipo input e um do tipo span. O input deve ser do tipo texto</p>
+		<p>Faça uma função em JavaScript que apresente no elemento do tipo span quantos caracteres foram digitados a
+			cada vez que uma tecla for solta. Por padrão, o lemento span deve apresentar o valor 0, quando o input
+			estiver vazio.</p>
+
+		<input id="input-caracteres" type="text" onkeyup="contaCaracteres(this)" onload="contaCaracteres(this)">
+		<span></span>
+	</article>
+
+	<article>
+		<h1>Exercício 3</h1>
+
+		<p>Crie um elemento do tipo input text. Além disso, inclua um botão com o label "Gerar".</p>
+		<p>Faça um script que leia o texto do input. Caso tenha menos de duas palavras, emita um alerta informando que
+			deve ser informado um número superior de palavas. Caso exista pelo menos três palavras, o script deve
+			quebrar toda a frase usando como separador o espaço em branco. Cada palavra será usada para compor um novo
+			input com a edição desabilitada.</p>
+
+		<input id="input-textos" type="text" placeholder="O pássaro voa.">
+		<button onclick="manipulaTextos()">Gerar</button>
+		<span id="span-inputs"></span>
+	</article>
+
+	<article>
+		<h1>Exercício 4</h1>
+
+		<p>Crie um formulário em HTML com os seguintes campos:</p>
+
+		<ul>
+			<li><strong>Nome</strong> (O campo nome não pode ser vazio, não pode conter apenas espaços, não pode ter
+				mais de 40 caracteres)</li>
+			<li><strong>Data de Nascimento</strong> (O campo data de nascimento não pode ser vazio. O ano de nascimento
+				não pode ser inferor a 1910 e nem superior ao ano atual)</li>
+			<li><strong>Quantidade Filhos</strong> (O campo quantidade filhos deve aceitar apenas "números" entre 1 e
+				99)</li>
+			<li><strong>Botão enviar</strong> (utilize um input type submit)</li>
+		</ul>
+
+		<p>
+			Observação: não utilize atributos HTML para realizar a limitação e/ou validação dos campos solicitados. Faça
+			através de script quando clicar no botão Enviar.
+		</p>
+
+		<form action="#" method="post" onsubmit="return validaFormulario()">
+			<label for="nome">Nome: </label>
+			<input type="text" id="nome">
+
+			<br>
+
+			<label for="nascimento">Data de Nascimento: </label>
+			<input type="date" name="birthdate" id="nascimento">
+
+			<br>
+
+			<label for="quantidade-filhos">Quantidade filhos: </label>
+			<input type="number" name="number-of-children" id="quantidade-filhos">
+
+			<br>
+
+			<input type="submit" value="Enviar">
+		</form>
+	</article>
 </body>
 
 </html>

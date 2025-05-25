@@ -10,9 +10,26 @@ body {
 	padding: 1rem;
 }
 
-div {
+h1 {
+	font-size: xx-large;
+	margin: 1.4rem 0;
+}
+
+h2 {
+	font-size: larger;
+	margin: 1.2rem 0;
+}
+
+p {
+	font-size: medium;
+	margin: 1rem 0;
+}
+
+ul, ol, li {
+	margin: 0.4rem 1rem;
+}
+
+#span-inputs {
+	margin: 0.5rem 0;
 	display: inline-block;
-	width: 40px;
-	height: 40px;
-	border: 1px solid black;
 }

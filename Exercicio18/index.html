@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="exercicio 18 de html, css e javascript">
+	<meta name="keywords" content="html,css,js">
+	<link rel="stylesheet" href="./styles.css">
+	<title>WEB 1 | Exercício 18</title>
+</head>
+
+<body id="root">
+	<script defer src="./script.js"></script>
+
+	<article>
+		<h1>Exercício 1</h1>
+
+		<p>Faça o que se pede:</p>
+
+		<ol type="a">
+			<li>Crie um elemento do tipo ComboBox (select) que conterá as opções: Escolha um estado; São Paulo; Minas
+				Gerais; Rio de Janeiro e Espirito Santo</li>
+			<li>Crie um novo ComboBox que conterá a opção: Escolha uma Cidade. Este elemento deve receber, inicialmente,
+				o estilo display: none para que não seja exibido na página.</li>
+			<li>Crie uma função que vai ser disparada no evento onchange do primeiro ComboBox criado (estados). Caso a
+				opção escolhida seja diferente da correspondente a "Escolha um estado", o ComboBox criado no item b deve
+				ser apresentado. Caso contrário, ele deve ser ocultado.</li>
+		</ol>
+
+		<select name="state" id="estados" onchange="escolheEstado(this)">
+			<option value="inicial" selected>Escolha um Estado</option>
+			<option value="sao-paulo">São Paulo</option>
+			<option value="minas-gerais">Minas Gerais</option>
+			<option value="rio-de-janeiro">Rio de Janeiro</option>
+			<option value="espirito-santo">Espírito Santo</option>
+		</select>
+
+		<select name="city" id="cidades">
+			<option value="inicial">Escolha uma Cidade</option>
+		</select>
+
+	</article>
+
+	<article>
+		<h1>Exercício 2</h1>
+
+		<p>Partindo do mesmo princípio adotado on exercício 1, isto é, criar um ComboBox para selecionar um estado e um
+			ComboBox para Selecionar uma cidade, considere que agora, de acordo com o estado escolhido, deve ser
+			apresentado no segundo ComboBox (de cidades) uma lista de cidades (pelo menos três) referente a cada estado.
+		</p>
+
+		<select name="state" id="estados-2" onchange="apresentaCidades(this)">
+			<option value="inicial" selected>Escolha um Estado</option>
+			<option value="sao-paulo">São Paulo</option>
+			<option value="minas-gerais">Minas Gerais</option>
+			<option value="rio-de-janeiro">Rio de Janeiro</option>
+			<option value="espirito-santo">Espírito Santo</option>
+		</select>
+
+		<select name="city" id="cidades-2"></select>
+	</article>
+
+	<a href="./../index.html">Voltar ao Menu Principal</a>
+</body>
+
+</html>
